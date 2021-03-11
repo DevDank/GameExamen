@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour
     public GameObject laser;
     public GameObject firePoint;
     public GameObject firePoint2;
-    public bool onCooldown = false;
+    private bool onCooldown = false;
     private float cooldownTime = 0.2f;
     // Start is called before the first frame update
     void Start()

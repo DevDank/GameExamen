@@ -8,7 +8,7 @@ public class Laser : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(bruh());
+        StartCoroutine(RemoveLaser());
     }
 
     // Update is called once per frame
@@ -19,7 +19,7 @@ public class Laser : MonoBehaviour
 
 
 
-    IEnumerator bruh()
+    IEnumerator RemoveLaser()
     {
 
 
