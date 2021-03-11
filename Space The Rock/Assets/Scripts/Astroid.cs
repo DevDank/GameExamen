@@ -10,16 +10,15 @@ public class Astroid : MonoBehaviour {
     
     void Start()
     {
-        for (int i = 1; i < 360; i++)
-        {
-            gameObject.transform.rotation = Quaternion.Euler(i, i, 0);
-            System.Threading.Thread.Sleep(5000);
-        }
+        
 
     }
 
     void Update()
     {
-        
+        transform.Rotate(new Vector3(0, 0, 300) * Time.deltaTime);
     }
+
+
+    void OnCOllisionEnter(Collision collision)
 }
