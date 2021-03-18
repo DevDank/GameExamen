@@ -16,9 +16,14 @@ public class Astroid : MonoBehaviour {
 
     void Update()
     {
-        transform.Rotate(new Vector3(0, 0, 300) * Time.deltaTime);
+        transform.Rotate(new Vector3((Random.Range(1, 360)), (Random.Range(1, 360)), (Random.Range(1, 360))) * Time.deltaTime);
     }
+    
 
+    private void OnCollisionEnter(Collision other) {
+        Destroy(other.gameObject);
 
-    void OnCOllisionEnter(Collision collision)
+        
+    }
+   
 }
