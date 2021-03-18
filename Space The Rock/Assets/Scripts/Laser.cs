@@ -21,9 +21,8 @@ public class Laser : MonoBehaviour
 
     IEnumerator RemoveLaser()
     {
-
-
         yield return new WaitForSeconds(3);
         Destroy(gameObject);
     }
+   
 }

@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -20,8 +20,12 @@ public class Astroid : MonoBehaviour {
     }
     
 
+// kill space ship on impact
     private void OnCollisionEnter(Collision other) {
-        Destroy(other.gameObject);
+        if(other.gameObject.tag == "Laser"){
+            Destroy(gameObject);
+        } else Destroy(other.gameObject);
+
 
         
     }
