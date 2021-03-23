@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Undefined
   - Laser
+  - Big
+  - Med
+  - Small
   layers:
   - Default
   - TransparentFX
