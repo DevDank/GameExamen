@@ -178,6 +178,9 @@ MonoBehaviour:
   mediumAstroid: {fileID: 1117314459608612}
   smallAstroid: {fileID: 1133817846026408, guid: 06b240598b439ef4aa8a85edec43bd21,
     type: 2}
+  gameManager: {fileID: 114248034840205042, guid: 86fe38f8991328643afcdfbfd5845d15,
+    type: 2}
+  astroidPoints: 10
 --- !u!114 &114881758403744688
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -192,6 +195,8 @@ MonoBehaviour:
   mediumAstroid: {fileID: 1763954894762364}
   smallAstroid: {fileID: 1467781356645474, guid: 06b240598b439ef4aa8a85edec43bd21,
     type: 2}
+  gameManager: {fileID: 0}
+  astroidPoints: 10
 --- !u!222 &222613219663262206
 CanvasRenderer:
   m_ObjectHideFlags: 1

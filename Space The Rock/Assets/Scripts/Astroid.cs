@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class Astroid : MonoBehaviour {
 
     // Use this for initialization
@@ -10,10 +11,12 @@ public class Astroid : MonoBehaviour {
     private float maxSpeed = 100f;
     public GameObject mediumAstroid;
     public GameObject smallAstroid;
+    public GameManager gameManager;
+    public int astroidPoints = 10;
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
 
     void Update()
@@ -37,31 +40,40 @@ public class Astroid : MonoBehaviour {
             }
             Destroy(other.gameObject);
             Destroy(gameObject);
+            
         } else if(other.gameObject.tag == "player"){
             Destroy(gameObject);
         }
  // astroid destroyed zichzelf met collision omdat spawned op zelfde positie   
     }
 
-   
-    private void BigAstroid(){
+   //turn big astroidin 2 medium
+    public void BigAstroid(){
         Debug.Log("xDGROOT");
+        AstroidScore(); // ad score
         Instantiate(mediumAstroid, gameObject.transform.position, gameObject.transform.rotation);
         Instantiate(mediumAstroid, gameObject.transform.position, gameObject.transform.rotation);
     }
 
     // turn medium astroid into 2 small
-    private void MedAstroid(){
+    
+    public void MedAstroid(){
         Debug.Log("MEDIUM BRUH");
+        AstroidScore(); // add score
         Instantiate(smallAstroid, gameObject.transform.position, gameObject.transform.rotation);
         Instantiate(smallAstroid, gameObject.transform.position, gameObject.transform.rotation);
     }
 
-
+    // max speed
     void FixedUpdate() {
         if(rb.velocity.magnitude > maxSpeed){
             rb.velocity = Vector3.ClampMagnitude(rb.velocity, maxSpeed);
         }
+    }
+
+    //add points to score
+    public void AstroidScore(){
+        gameManager.UpdateScore(astroidPoints);
     }
 
 }
