@@ -38,11 +38,13 @@ public class Astroid : MonoBehaviour {
             } else if(gameObject.tag == "Med"){
                 MedAstroid();             
             }
+             AstroidScore();
             Destroy(other.gameObject);
             Destroy(gameObject);
             
-        } else if(other.gameObject.tag == "player"){
-            Destroy(gameObject);
+        } else if(other.gameObject.tag == "Player"){
+            Destroy(other.gameObject);
+            Debug.Log("bruh");
         }
  // astroid destroyed zichzelf met collision omdat spawned op zelfde positie   
     }
@@ -50,7 +52,7 @@ public class Astroid : MonoBehaviour {
    //turn big astroidin 2 medium
     public void BigAstroid(){
         Debug.Log("xDGROOT");
-        AstroidScore(); // ad score
+        AstroidScore(); // add score
         Instantiate(mediumAstroid, gameObject.transform.position, gameObject.transform.rotation);
         Instantiate(mediumAstroid, gameObject.transform.position, gameObject.transform.rotation);
     }
