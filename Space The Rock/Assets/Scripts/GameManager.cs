@@ -2,13 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
 
 
 public class GameManager : MonoBehaviour {
 
+	
 	public Text scoreText;
 	public int score;
-	
+	public GameObject GameOverScreen;
 	public static bool GameIsPaused = false;
 	public GameObject pauseMenuUI;
 	// Use this for initialization
@@ -46,4 +49,11 @@ public class GameManager : MonoBehaviour {
 		score += scoreToAdd;
 		scoreText.text= "Score: " + score;
 	}
+
+
+	public void GameOver(){
+	GameOverScreen.SetActive(true);
+
+	} 
 }
+

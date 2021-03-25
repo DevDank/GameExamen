@@ -107,10 +107,10 @@ MonoBehaviour:
     y: 30
     width: 1904
     height: 931
-  m_MinSize: {x: 913, y: 442}
-  m_MaxSize: {x: 22008, y: 10021}
+  m_MinSize: {x: 783, y: 442}
+  m_MaxSize: {x: 16008, y: 8042}
   vertical: 0
-  controlID: 140
+  controlID: 147
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -134,7 +134,7 @@ MonoBehaviour:
   m_MinSize: {x: 402, y: 442}
   m_MaxSize: {x: 8002, y: 8042}
   vertical: 0
-  controlID: 79
+  controlID: 56
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -254,15 +254,15 @@ MonoBehaviour:
     y: 0
     width: 394
     height: 931
-  m_MinSize: {x: 234, y: 271}
-  m_MaxSize: {x: 10004, y: 10021}
-  m_ActualView: {fileID: 19}
+  m_MinSize: {x: 104, y: 121}
+  m_MaxSize: {x: 4004, y: 4021}
+  m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
   - {fileID: 19}
   - {fileID: 20}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -393,14 +393,14 @@ MonoBehaviour:
     width: 965
     height: 429
   m_SceneLighting: 1
-  lastFramingTime: 86.7123127
+  lastFramingTime: 1363.403032
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -179.104, y: -44.779877, z: -775.169}
+    m_Target: {x: 472.68, y: 157.95, z: 0}
     speed: 2
-    m_Value: {x: -179.104, y: -44.779877, z: -775.169}
+    m_Value: {x: 472.68, y: 157.95, z: 0}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -423,13 +423,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.028993366, y: 0.9690536, z: -0.13934022, w: -0.20168917}
+    m_Target: {x: -0.0020736647, y: 0.9839896, z: -0.17784637, w: -0.011514024}
     speed: 2
-    m_Value: {x: -0.028993372, y: 0.9690538, z: -0.13934025, w: -0.2016892}
+    m_Value: {x: -0.002073663, y: 0.98398876, z: -0.17784622, w: -0.011514015}
   m_Size:
-    m_Target: 1544.1841
+    m_Target: 1186.1289
     speed: 2
-    m_Value: 1544.1841
+    m_Value: 1186.1289
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -539,9 +539,9 @@ MonoBehaviour:
     height: 910
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: fa71feff
+    m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 2833feffecfaffffeefaffff7afbffff7cfbffffa2fbffffa4fbffffa6fbffff00000000d2280000
+    m_ExpandedIDs: f671feff7ac1ffff3ae3ffffa6fbffff00000000ae2c0000d82c0000f82c00000c2d00001c2d00004c2d0000642d00006c2d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -628,18 +628,18 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Prefabs
+    - Assets/Scripts
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Prefabs
+  - Assets/Scripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\imdam\Desktop\GameExamen\GameExamen\Space The Rock
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 42280000
-    m_LastClickedID: 10306
+    m_SelectedIDs: 76270000
+    m_LastClickedID: 10102
     m_ExpandedIDs: 000000006427000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -693,10 +693,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
+    m_SelectedInstanceIDs: 6c32feff
+    m_LastClickedInstanceID: -118164
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c62300007a2d0000882e00004a4dfeffbc7afeff7474feffe276feffc02700000e28000026280000c627000000000000a29cf8ff9e6ffeff4a6dfefff871feff
+    m_ExpandedInstanceIDs: c62300007a2d0000882e00004a4dfeffbc7afeff7474feffe276feffc02700000e28000026280000c6270000a29cf8ff9e6ffeff4a6dfefff871feff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

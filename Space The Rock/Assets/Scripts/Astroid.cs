@@ -12,11 +12,13 @@ public class Astroid : MonoBehaviour {
     public GameObject mediumAstroid;
     public GameObject smallAstroid;
     public GameManager gameManager;
+    public GameManager deathcommand;
     public int astroidPoints = 10;
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        
     }
 
     void Update()
@@ -42,8 +44,10 @@ public class Astroid : MonoBehaviour {
             Destroy(other.gameObject);
             Destroy(gameObject);
             
+            // end game
         } else if(other.gameObject.tag == "Player"){
             Destroy(other.gameObject);
+            gameManager.GameOver();
             Debug.Log("bruh");
         }
  // astroid destroyed zichzelf met collision omdat spawned op zelfde positie   
