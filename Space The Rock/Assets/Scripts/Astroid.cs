@@ -25,7 +25,7 @@ public class Astroid : MonoBehaviour {
     {
         //spin in random direction
         transform.Rotate(new Vector3((Random.Range(1, 360)), (Random.Range(1, 360)), (Random.Range(1, 360))) * Time.deltaTime);
-    
+        transform.position = new Vector3(transform.position.x, 217, transform.position.z);
     }
     
 

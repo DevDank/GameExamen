@@ -14,10 +14,16 @@ public class GameManager : MonoBehaviour {
 	public GameObject GameOverScreen;
 	public static bool GameIsPaused = false;
 	public GameObject pauseMenuUI;
+	public List<GameObject> astroids;
+	
+	public GameObject ShittySpawnPoint;
+	public float spawnRate = 1.0f;
 	// Use this for initialization
 	void Start () {
 		score = 0;
 		UpdateScore(0);
+		
+		StartGame();
 	}
 	
 	// Update is called once per frame
@@ -30,6 +36,7 @@ public class GameManager : MonoBehaviour {
 			}
 			
 		}
+
 	}
 
 	void Resume (){
@@ -55,5 +62,27 @@ public class GameManager : MonoBehaviour {
 	GameOverScreen.SetActive(true);
 
 	} 
+
+
+	IEnumerator SpawnTarget()
+    {
+        while (GameIsPaused == false)
+        {
+            yield return new WaitForSeconds(spawnRate);
+            int index = Random.Range(0, astroids.Count);
+            Instantiate(astroids[index], ShittySpawnPoint.transform.position, ShittySpawnPoint.transform.rotation);
+
+            
+        }
+       
+    }
+
+	public void StartGame()
+    {       
+        StartCoroutine(SpawnTarget());
+    }
+
+
+	
 }
 
